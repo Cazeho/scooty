@@ -2,7 +2,7 @@
 
 [![Generic badge](https://img.shields.io/badge/Made%20with-Python-blue.svg?style=flat-square)](https://github.com/Cazeho/scooty)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg?style=flat-square)](https://github.com/Cazeho/scooty)
-[![GitHub contributors](https://img.shields.io/github/contributors/theresafewconors/sooty.svg?style=flat-square)](https://github.com/Cazeho/scooty/graphs/contributors/)
+[![GitHub contributors](https://img.shields.io/github/contributors/Cazeho/scooty.svg?style=flat-square)](https://github.com/Cazeho/scooty/graphs/contributors/)
 [![Generic badge](https://img.shields.io/badge/Built%20For-SOC%20Analyst's-olive.svg?style=flat-square)](https://GitHub.com/theresafewconors/sooty)
 ![Docker](https://img.shields.io/badge/Docker-Supported-blue)
 
