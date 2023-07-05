@@ -12,6 +12,17 @@
 Scooty is a tool developed with the task of aiding SOC analysts with automating part of their workflow. One of the goals of Scooty is to perform as many of the routine checks as possible, allowing the analyst more time to spend on deeper analysis within the same time-frame. Details for many of Scooty's features can be found below.
 
 
+### feature & integrate tools
+
+file type
+hash sha256, md5, sha1
+send hash to vt
+send file to vt
+pescan ???
+analyse .doc => oleid, oleobj
+analyse .pdf => peepdf
+regex onlist url, ip
+
 ## Contents
  - [Current Features](#sooty-can-currently)
  - [Requirements & Installation](#requirements-and-installation)
