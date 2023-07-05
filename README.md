@@ -22,6 +22,7 @@ Scooty is a tool developed with the task of aiding SOC analysts with automating 
 - analyse .doc => oleid, oleobj
 - analyse .pdf => peepdf
 - regex onlist url, ip
+- event log
 
 ## Contents
  - [Current Features](#sooty-can-currently)
