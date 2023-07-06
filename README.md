@@ -23,6 +23,8 @@ Scooty is a tool developed with the task of aiding SOC analysts with automating 
 - analyse .pdf => peepdf
 - regex onlist url, ip
 - event log => python-evtx
+- linux log => ssh, apache, nginx
+- email analysis => headers
 - send file to triage sandbox
 - web inferface
 
