@@ -18,7 +18,7 @@ Scooty is a tool developed with the task of aiding SOC analysts with automating 
 - hash sha256, md5, sha1
 - send hash to vt
 - send file to vt
-- pescan / clamscan ???
+- pescan / clamscan / capa ???
 - analyse .doc => oleid, oleobj
 - analyse .pdf => peepdf
 - regex onlist url, ip
