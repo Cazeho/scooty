@@ -30,7 +30,7 @@ Scooty is a tool developed with the task of aiding SOC analysts with automating 
 
 ### Usage
 
-```scooty.py idle --web``
+```scooty.py idle --web```
 
 ## Contents
  - [Current Features](#sooty-can-currently)
