@@ -28,6 +28,10 @@ Scooty is a tool developed with the task of aiding SOC analysts with automating 
 - send file to triage sandbox (*)
 - web inferface (*)
 
+### Usage
+
+```scooty.py idle --web``
+
 ## Contents
  - [Current Features](#sooty-can-currently)
  - [Requirements & Installation](#requirements-and-installation)
