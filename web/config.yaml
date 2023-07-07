@@ -1,0 +1,4 @@
+virustotal:
+  api_key: 'Your VT API key'
+triage:
+  api_key: 'Your Triage sandbox API key'
