@@ -8,7 +8,26 @@ import sys
 import mimetypes
 import subprocess
 import os
+import signal
 import yaml
+
+
+class Subprocess:
+    def __init__(self, command):
+        self.command = command
+        self.process = None
+
+    def run(self):
+        self.process = subprocess.Popen(self.command, shell=True, preexec_fn=os.setsid)
+        try:
+            self.process.wait()
+        except KeyboardInterrupt:
+            self.stop()
+
+    def stop(self):
+        if self.process:
+            os.killpg(os.getpgid(self.process.pid), signal.SIGTERM)
+
 
 with open('web/config.yaml', 'r') as f:
     config = yaml.safe_load(f)
@@ -76,7 +95,8 @@ if __name__ == "__main__":
 
     try:
         if args.web and args.filename =="idle":
-            subprocess.Popen(["streamlit", "run", "./web/app.py"])
+            s = Subprocess("streamlit run ./web/app.py")
+            s.run()
 
         elif  args.web and args.filename !="idle":
             file_path = os.path.abspath(args.filename)
