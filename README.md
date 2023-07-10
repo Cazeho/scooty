@@ -16,8 +16,8 @@ Scooty is a tool developed with the task of aiding SOC analysts with automating 
 
 - file type (*)
 - hash sha256, md5, sha1 (*)
-- send hash to vt (*)
-- send file to vt (*)
+- send hash to VT (*)
+- send file to VT (*)
 - pescan / clamscan / capa ???
 - analyse .doc => oleid, oleobj
 - analyse .pdf => peepdf, pdf-parser
