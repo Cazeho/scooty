@@ -7,7 +7,7 @@ from typing import Optional
 import json
 import yaml
 
-with open('config.yaml', 'r') as f:
+with open('./web/config.yaml', 'r') as f:
     config = yaml.safe_load(f)
 
 
