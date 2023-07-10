@@ -12,6 +12,10 @@ import signal
 import yaml
 
 
+with open('web/config.yaml', 'r') as f:
+    config = yaml.safe_load(f)
+
+
 class Subprocess:
     def __init__(self, command):
         self.command = command
@@ -28,9 +32,6 @@ class Subprocess:
         if self.process:
             os.killpg(os.getpgid(self.process.pid), signal.SIGTERM)
 
-
-with open('web/config.yaml', 'r') as f:
-    config = yaml.safe_load(f)
 
 
 BUF_SIZE = 65536  # read in 64kb chunks
