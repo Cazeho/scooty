@@ -11,6 +11,9 @@
 
 Scooty is a tool developed with the task of aiding SOC analysts with automating part of their workflow. One of the goals of Scooty is to perform as many of the routine checks as possible, allowing the analyst more time to spend on deeper analysis within the same time-frame. Details for many of Scooty's features can be found below.
 
+### Platform
+
+Linux & Windows & docker
 
 ### feature & integrate tools
 
@@ -22,8 +25,8 @@ Scooty is a tool developed with the task of aiding SOC analysts with automating 
 - analyse .doc => oleid, oleobj
 - analyse .pdf => peepdf, pdf-parser
 - regex onlist url, ip
-- event log => python-evtx
-- linux log => ssh, apache, nginx
+- event log parser => python-evtx
+- linux log parser => ssh, apache, nginx
 - email analysis => headers
 - send file to triage sandbox (*)
 - web inferface (*)
