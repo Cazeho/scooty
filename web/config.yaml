@@ -1,4 +1,4 @@
 virustotal:
-  api_key: 'Your VT API key'
+  api_key: '7b6e2f3c3a8067581502a841b1a06346772e12c263d49a41e60f948a5b83d6cb'
 triage:
-  api_key: 'Your Triage sandbox API key'
+  api_key: 'd7375c069af9eebc1612c6dfdbb5ba0a7bc6e910'
