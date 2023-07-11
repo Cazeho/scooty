@@ -22,7 +22,11 @@ class Subprocess:
         self.process = None
 
     def run(self):
-        self.process = subprocess.Popen(self.command, shell=True, preexec_fn=os.setsid)
+        if sys.platform.startswith('win'):
+            self.process = subprocess.Popen(self.command, shell=True)
+        else:
+            self.process = subprocess.Popen(self.command, shell=True, preexec_fn=os.setsid)
+        
         try:
             self.process.wait()
         except KeyboardInterrupt:
@@ -30,7 +34,10 @@ class Subprocess:
 
     def stop(self):
         if self.process:
-            os.killpg(os.getpgid(self.process.pid), signal.SIGTERM)
+            if sys.platform.startswith('win'):
+                self.process.terminate()
+            else:
+                os.killpg(os.getpgid(self.process.pid), signal.SIGTERM)
 
 
 
