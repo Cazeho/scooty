@@ -8,8 +8,32 @@ import sys
 import mimetypes
 import subprocess
 import os
-import signal
 import yaml
+import signal
+
+import tempfile
+
+###########################################
+
+
+def create_temp_file(sample_path):
+    temp_dir = os.path.join(tempfile.gettempdir(), "sample")
+    if not os.path.exists(temp_dir):
+        os.makedirs(temp_dir)
+
+    temp_file = tempfile.mktemp(dir=temp_dir)
+    with open(temp_file, 'w') as file:
+        file.write(sample_path)
+
+
+def delete_temp_file():
+    pass
+
+
+
+
+###########################################
+
 
 
 with open('web/config.yaml', 'r') as f:
@@ -39,9 +63,7 @@ class Subprocess:
             else:
                 os.killpg(os.getpgid(self.process.pid), signal.SIGTERM)
 
-
-
-BUF_SIZE = 65536  # read in 64kb chunks
+BUF_SIZE = 65536
 
 session = requests.Session()
 session.headers = {'X-Apikey': config['virustotal']['api_key']}
@@ -107,9 +129,13 @@ if __name__ == "__main__":
             s.run()
 
         elif  args.web and args.filename !="idle":
-            file_path = os.path.abspath(args.filename)
+            #file_path = os.path.abspath(args.filename)
+            #print(file_path)
+            hash=get_hash(args.filename, args.hash)
+            create_temp_file(hash)
+            s = Subprocess("streamlit run ./web/pages/automatic.py")
+            s.run()
 
-            #subprocess.Popen(["streamlit", "run", "./web/pages/automatic.py"])
         else:
             hash_result = get_hash(args.filename, args.hash)
             mimetype = mimetypes.guess_type(args.filename)
@@ -131,3 +157,4 @@ if __name__ == "__main__":
     except Exception as e:
         print(e)
         sys.exit(1)
+
