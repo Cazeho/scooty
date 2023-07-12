@@ -11,9 +11,11 @@
 
 Scooty is a tool developed with the task of aiding SOC analysts with automating part of their workflow. One of the goals of Scooty is to perform as many of the routine checks as possible, allowing the analyst more time to spend on deeper analysis within the same time-frame. Details for many of Scooty's features can be found below.
 
-### Platform
+### Supported Platform
 
-Linux & Windows & docker
+- [x] Linux 
+- [x] Windows
+- [ ] docker
 
 
 ## Contents
