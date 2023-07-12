@@ -15,6 +15,15 @@ Scooty is a tool developed with the task of aiding SOC analysts with automating 
 
 Linux & Windows & docker
 
+
+## Contents
+ - [Current Features](#feature-&-integrate-tools)
+ - [Requirements & Installation](#requirements-and-installation)
+ - [Usage](#usage)
+ - [Development](#development)
+ - [Changelog](#changelog)
+
+
 ### feature & integrate tools
 
 - file type (*)
@@ -31,14 +40,8 @@ Linux & Windows & docker
 - send file to triage sandbox (*)
 - web inferface (*)
 
-### Usage
+### requirements and installation
+
+### usage
 
 ```scooty.py idle --web```
-
-## Contents
- - [Current Features](#sooty-can-currently)
- - [Requirements & Installation](#requirements-and-installation)
- - [Development](#development)
- - [Changelog](#changelog)
- - [Roadmap](#roadmap)
- - [Contributors](#contributors)
