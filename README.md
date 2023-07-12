@@ -42,6 +42,8 @@ Linux & Windows & docker
 
 ### requirements and installation
 
+#### install on linux
+
 ```curl -s https://raw.githubusercontent.com/Cazeho/scooty/main/install.sh | bash```
 
 #### You need to get VT & Tria.ge API Key
