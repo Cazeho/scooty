@@ -42,9 +42,9 @@ Linux & Windows & docker
 
 ### requirements and installation
 
-### usage
-
 ```nano ```
+
+### usage
 
 #### Get web interface
 
@@ -57,6 +57,7 @@ Linux & Windows & docker
 ### Get hash and file type
 
 ```python3 scooty.py example.txt```
+<br>
 ```python3 scooty.py example.txt --hash md5```
 
 ### Send file hash to Virustotal for analysis
