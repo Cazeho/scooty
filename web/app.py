@@ -27,7 +27,16 @@ def auth_triage(api_key):
     header = {'Authorization': 'Bearer ' + api_key}
     return header
 
-
+def vt_analyse(file_hash):
+    url = f"https://www.virustotal.com/ui/files/{file_hash}"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:91.0) Gecko/20100101 Firefox/91.0",
+        "X-Tool": "vt-ui-main",
+        "X-VT-Anti-Abuse-Header": "MTA3OTM2NjUwMjctWkc5dWRDQmlaU0JsZG1scy0xNjMxMTE3NzQyLjY1",
+        "Accept-Ianguage": "en-US,en;q=0.9,es;q=0.8",
+    }
+    data=requests.get(url, headers=headers).json()
+    return data
 
 
 class Triage():
