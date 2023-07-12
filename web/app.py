@@ -11,22 +11,6 @@ with open('./web/config.yaml', 'r') as f:
     config = yaml.safe_load(f)
 
 
-st.set_page_config(page_title="home",  page_icon="🧭")
-st.sidebar.header("Home")
-
-st.title("Scooty : Couteau Suisse de l'analyste SOC")
-
-st.title("Virustotal")
-
-ioc= st.text_input("Enter your IOC (@IP, URL, FQDN et Hash File)")
-
-
-api_key=config['triage']['api_key']
-
-def auth_triage(api_key):
-    header = {'Authorization': 'Bearer ' + api_key}
-    return header
-
 def vt_analyse(file_hash):
     url = f"https://www.virustotal.com/ui/files/{file_hash}"
     headers = {
@@ -37,6 +21,27 @@ def vt_analyse(file_hash):
     }
     data=requests.get(url, headers=headers).json()
     return data
+
+
+st.set_page_config(page_title="home",  page_icon="🧭")
+st.sidebar.header("Home")
+
+st.title("Scooty : Couteau Suisse de l'analyste SOC")
+
+st.title("Virustotal")
+
+ioc= st.text_input("Enter your IOC (Hash File)")
+
+if ioc is not None:
+    st.write(vt_analyse(ioc))
+
+api_key=config['triage']['api_key']
+
+def auth_triage(api_key):
+    header = {'Authorization': 'Bearer ' + api_key}
+    return header
+
+
 
 
 class Triage():
