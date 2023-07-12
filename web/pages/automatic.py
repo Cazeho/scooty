@@ -7,7 +7,7 @@ import requests
 st.set_page_config(page_title="automatic",  page_icon="🧭")
 st.sidebar.header("automatic")
 
-st.title("Automatic analysis VT & Triage sandbox")
+st.title("Automatic analysis with VT")
 
 
 
