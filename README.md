@@ -42,7 +42,11 @@ Linux & Windows & docker
 
 ### requirements and installation
 
-```nano ```
+```curl -s https://raw.githubusercontent.com/Cazeho/scooty/main/install.sh | bash```
+
+## You need to get VT & Tria.ge API Key
+
+```nano /opt/scooty/web/config.yaml```
 
 ### usage
 
