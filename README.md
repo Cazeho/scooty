@@ -76,4 +76,16 @@ Scooty is a tool developed with the task of aiding SOC analysts with automating 
 
 ```python3 scooty.py example.txt --sendfile```
 
+## Image
+
+
+![image](https://github.com/Cazeho/scooty/assets/58745332/de4fc767-796d-4dd0-85c5-e13bd367c6bd)
+
+
+![image](https://github.com/Cazeho/scooty/assets/58745332/ebcb76b8-4409-4d0c-9765-699838995876)
+
+
+
+
+
 
