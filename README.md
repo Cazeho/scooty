@@ -56,21 +56,21 @@ Linux & Windows & docker
 
 ```python3 scooty.py idle --web```
 
-### Get web interface with filename analysis
+#### Get web interface with filename analysis
 
 ```python3 scooty.py example.txt --web```
 
-### Get hash and file type
+#### Get hash and file type
 
 ```python3 scooty.py example.txt```
 <br>
 ```python3 scooty.py example.txt --hash md5```
 
-### Send file hash to Virustotal for analysis
+#### Send file hash to Virustotal for analysis
 
 ```python3 scooty.py example.txt --sendhash```
 
-### Send file to Virustotal for analysis
+#### Send file to Virustotal for analysis
 
 ```python3 scooty.py example.txt --sendfile```
 
