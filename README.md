@@ -44,7 +44,7 @@ Linux & Windows & docker
 
 ```curl -s https://raw.githubusercontent.com/Cazeho/scooty/main/install.sh | bash```
 
-## You need to get VT & Tria.ge API Key
+#### You need to get VT & Tria.ge API Key
 
 ```nano /opt/scooty/web/config.yaml```
 
