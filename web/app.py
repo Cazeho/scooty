@@ -19,7 +19,7 @@ def vt_analyse(file_hash):
         "X-VT-Anti-Abuse-Header": "MTA3OTM2NjUwMjctWkc5dWRDQmlaU0JsZG1scy0xNjMxMTE3NzQyLjY1",
         "Accept-Ianguage": "en-US,en;q=0.9,es;q=0.8",
     }
-    data=requests.get(url, headers=headers).json()
+    data=rq.get(url, headers=headers).json()
     return data
 
 
